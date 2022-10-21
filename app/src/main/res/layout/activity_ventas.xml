@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ventas"
+    android:background="#94787D7E">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SALES"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/etemailventas"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etsetvalueventas"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="setValue"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etdateventas"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="date"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnguardarventas"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#6A050505"
+        android:gravity="center"
+        android:text="SAVE" />
+
+    <Button
+        android:id="@+id/btnatras"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="GO BACK"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#050505"
+        android:gravity="center"/>
+
+</LinearLayout>
