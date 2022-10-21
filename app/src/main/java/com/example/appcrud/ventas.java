@@ -21,6 +21,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.security.Principal;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -42,10 +43,11 @@ public class ventas extends AppCompatActivity {
         Button btnguardarventas = findViewById(R.id.btnguardarventas);
         Button btnatras = findViewById(R.id.btnatras);
 
+
         btnatras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                startActivity(new Intent(getApplicationContext(),principal.class));
             }
         });
 
@@ -96,7 +98,7 @@ public class ventas extends AppCompatActivity {
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (parseInt(svalorVentas) >= 10000000) {
+                        if (parseInt(sdateVentas) >= 10000000) {
                             if (task.isSuccessful()) {
                                 Map<String, Object> sales = new HashMap<>(); // Tabla cursor
                                 sales.put("emailVentas", semailVentas);

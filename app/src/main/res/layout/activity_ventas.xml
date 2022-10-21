@@ -24,7 +24,9 @@
         android:layout_height="wrap_content"
         android:hint="email"
         android:layout_gravity="center"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:drawableEnd="@drawable/ic_baseline_alternate_email_24"
+        />
 
     <EditText
         android:id="@+id/etsetvalueventas"
@@ -32,8 +34,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:hint="setValue"
-        android:textAlignment="center" />
+        android:hint="date"
+        android:textAlignment="center"
+        android:inputType="date"
+        android:drawableEnd="@drawable/ic_baseline_date_range_24"/>
+
 
     <EditText
         android:id="@+id/etdateventas"
@@ -41,8 +46,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:hint="date"
-        android:textAlignment="center" />
+        android:hint="Set value"
+        android:textAlignment="center"
+        android:drawableEnd="@drawable/ic_baseline_monetization_on_24"
+        android:inputType="number"/>
 
     <Button
         android:id="@+id/btnguardarventas"

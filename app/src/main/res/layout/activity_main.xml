@@ -26,7 +26,8 @@
         android:layout_marginTop="40dp"
         android:hint="Email"
         android:textAlignment="center"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/ic_baseline_alternate_email_24"/>
 
     <EditText
         android:id="@+id/etname"
@@ -36,7 +37,8 @@
         android:layout_marginTop="10dp"
         android:hint="Name"
         android:textAlignment="center"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/ic_baseline_drive_file_rename_outline_24"/>
 
     <EditText
         android:id="@+id/etphone"
@@ -46,7 +48,8 @@
         android:layout_marginTop="10dp"
         android:hint="Phone"
         android:textAlignment="center"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/ic_baseline_phone_iphone_24"/>
 
     <TextView
         android:id="@+id/tvcommision"
@@ -56,7 +59,9 @@
         android:layout_marginTop="10dp"
         android:hint="Total commision"
         android:textAlignment="center"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/ic_baseline_monetization_on_24"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -109,4 +114,15 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="#050505"
         android:text="SALE" />
+
+
+    <Button
+        android:id="@+id/btnatrasseller"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:text="GO BACK"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#050505"
+        android:layout_gravity="center"/>
+
 </LinearLayout>

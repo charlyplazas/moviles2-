@@ -43,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
         Button btnedit = findViewById(R.id.btnedit);
         Button btndelete = findViewById(R.id.btndelete);
         Button btnventas = findViewById(R.id.btnventas);
+        Button btnatrasseller = findViewById(R.id.btnatrasseller);
+
+
+        //este bton eta en la ventana de seller y lleva a la vista de principal
+        btnatrasseller.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),principal.class));
+            }
+        });
 
 
         //este bton eta en la ventana de seller y lleva a la vista de sales
